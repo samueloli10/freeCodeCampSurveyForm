@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+
+    <form id="survey-form">
+        <label class="linha" for="name">Name</label>
+        <input id="name" type="text" class="linha" placeholder="Enter your name" required>
+
+        <label class="linha" for="email">Email</label>
+        <input id="email" type="email" class="linha" placeholder="Enter your Email" required>
+
+        <label class="linha" for="number">Age (optional)</label>
+        <input id="number" type="number" class="linha" min="13" max="120" placeholder="Age" required>
+
+        <label class="linha" for="dropdown">Which option best describes your current role?</label>
+        <select id="dropdown1" class="linha">
+            <option disabled selected hidden>Select current role</option>
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer not to say</option>
+            <option>Other</option>
+        </select>
+
+        <label class="linha">Would you recommend freeCodeCamp to a friend?</label>
+        <label class="radio-label">
+            <input name="recommend-friend" type="radio" value="definitely">Definitely
+        </label>
+        <label class="radio-label">
+            <input name="recommend-friend" type="radio" value="maybe">Maybe
+        </label>
+        <label class="radio-label">
+            <input name="recommend-friend" type="radio" value="not-sure">Not sure
+        </label>
+
+        <label id="favorite-feature-label" class="linha" for="dropdown">What is your favorite feature of freeCodeCamp?</label>
+        <select id="dropdown2" class="linha">
+            <option disabled selected hidden>Select an option</option>
+            <option>Challenges</option>
+            <option>Projects</option>
+            <option>Community</option>
+            <option>Open Source</option>
+        </select>
+
+        <label id="see-improved-label" class="linha">What would you like to see improved? (Check all that apply)</label>
+        <label class="checkbox-label">
+            <input value="frontend" type="checkbox">Front-end Projects
+        </label>
+        <label class="checkbox-label">
+            <input value="backend" type="checkbox">Back-end Projects
+        </label>
+        <label class="checkbox-label">
+            <input value="data_visualization" type="checkbox">Data Visualization
+        </label>
+        <label class="checkbox-label">
+            <input value="challenges" type="checkbox">Challenges
+        </label>
+        <label class="checkbox-label">
+            <input value="open-source" type="checkbox">Open Source Community
+        </label>
+        <label class="checkbox-label">
+            <input value="gitter-help" type="checkbox">Gitter help rooms
+        </label>
+        <label class="checkbox-label">
+            <input value="videos" type="checkbox">Videos
+        </label>
+        <label class="checkbox-label">
+            <input value="city" type="checkbox">City Meetups
+        </label>
+        <label class="checkbox-label">
+            <input value="wiki" type="checkbox">Wiki
+        </label>
+        <label class="checkbox-label">
+            <input value="forum" type="checkbox">Forum
+        </label>
+        <label class="checkbox-label">
+            <input value="courses" type="checkbox">Additional Courses
+        </label>
+
+        <label id="comments-label" class="linha">Any comments or suggestions?</label>
+        <textarea id="textarea" placeholder="Enter your comment here..."></textarea>
+       
+        <button id="submit" type="submit">Submit</button>
+    </form>
+</body>
+
+</html>
